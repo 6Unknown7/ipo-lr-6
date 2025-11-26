@@ -8,7 +8,7 @@ nums = [random.randint(-50, 50) for _ in range(25)]
 print("Список:", nums, end='\n\n')
 
 # Считаем положительные, отрицательные и нули
-pos = sum(1 for num in nums if num > 0)  # Сокращенный цикл!
+pos = sum(1 for num in nums if num > 0)  # Сокращенный цикл
 neg = sum(1 for num in nums if num < 0)
 zeros = sum(1 for num in nums if num == 0)
 total = len(nums)
@@ -24,3 +24,4 @@ print(f"Всего: {total} шт.", end='\n\n')
 print("ЭКСТРЕМУМЫ:")
 print(f"Максимум: {max(nums)}")
 print(f"Минимум: {min(nums)}")
+
